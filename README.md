@@ -73,13 +73,48 @@ Problem związany z .... dotyczący... co powoduje ... można rozwiązać ...
 
 ## 3.3 Cechy funkcjonalne
 
-F08: System powinien umożliwiać zarządzanie rolami i zasobami gry.
-| Typ: _funkcjonalne_ | Wersja: 1.0 (02.03.2026) | Odpowiedzialny: Tomasz2004 |
+F03: System powinien umożliwiać tworzenie profili postaci.
+| Typ: _funkcjonalne_ | Wersja: 1.0 (01.03.2026) | Odpowiedzialny: Polina |
 | :--- | :--- | :--- |
 | Priorytet i trudność: Kluczowe || Wydanie: 1.0 |
-| Zaimplementowanie modułu pozwalającego organizatorom przypisywanie ról, przedmiotów oraz statystyk do konkretnych kont graczy, a graczom na ich podgląd w czasie rzeczywistym. |
+| Zaimplementowanie funkcjonalności umożliwiającej użytkownikowi tworzenie nowych profili postaci do gry LARP. Użytkownik powinien móc zdefiniować podstawowe atrybuty postaci (imię, klasa/rasa np. elf, krasnolud, rycerz, poziom doświadczenia), dodać opis biografii oraz wybrać wygląd postaci. Każda utworzona postać jest automatycznie powiązana z kontem użytkownika, który ją stworzył. |
+F04: System powinien umożliwiać edycję i przeglądanie szczegółów postaci.
+| Typ: _funkcjonalne_ | Wersja: 1.0 (01.03.2026) | Odpowiedzialny: Polina |
+| :--- | :--- | :--- |
+| Priorytet i trudność: Istotne || Wydanie: 1.0 |
 
-F09: System powinien umożliwiać interakcję z otoczeniem poprzez kody QR.
+| Zaimplementowanie funkcjonalności pozwalającej użytkownikowi na edycję wszystkich danych istniejącej postaci (imię, biografia, atrybuty, ekwipunek) oraz przeglądanie jej szczegółowych statystyk. System powinien wyświetlać informacje o poziomie doświadczenia, posiadanych przedmiotach, osiągnięciach z poprzednich sesji oraz historię rozgrywek daną postacią. Edycja postaci powinna być możliwa tylko gdy postać nie bierze aktualnie udziału w trwającej sesji LARP. |
+F05: System powinien umożliwiać przeglądanie historii uczestnictwa w wydarzeniach.
+| Typ: _funkcjonalne_ | Wersja: 1.0 (01.03.2026) | Odpowiedzialny: Polina |
+| :--- | :--- | :--- |
+| Priorytet i trudność: Istotne || Wydanie: 1.0 |
+
+| Zaimplementowanie sekcji pozwalającej użytkownikowi na przeglądanie pełnej historii wydarzeń LARP, w których brał udział. System powinien wyświetlać listę wszystkich ukończonych sesji z podstawowymi informacjami (data, nazwa wydarzenia, lokalizacja, odegrana postać, czas trwania), a także prezentować zagregowane statystyki takie jak: całkowita liczba ukończonych sesji, najczęściej grane role, ulubione scenariusze i typy wydarzeń. Historia powinna być sortowalna według daty oraz filtrowalna według typu wydarzenia, odgrywanej postaci lub organizatora. |
+F06: System powinien umożliwiać edycję danych osobowych w profilu użytkownika.
+| Typ: _funkcjonalne_ | Wersja: 1.0 (01.03.2026) | Odpowiedzialny: Polina |
+| :--- | :--- | :--- |
+| Priorytet i trudność: Kluczowe || Wydanie: 1.0 |
+| Zaimplementowanie panelu umożliwiającego użytkownikowi edycję swoich danych osobowych w systemie. Użytkownik powinien móc zmienić imię, nazwisko, adres email, numer telefonu oraz hasło do konta. System powinien wymagać potwierdzenia zmiany wrażliwych danych (email, hasło) poprzez weryfikację aktualnego hasła lub kod wysłany na dotychczasowy adres email. Wszystkie zmiany danych osobowych powinny być zapisywane w historii zmian konta dla celów bezpieczeństwa. |
+
+F07: System powinien umożliwiać zarządzanie preferencjami użytkownika.
+| Typ: _funkcjonalne_ | Wersja: 1.0 (01.03.2026) | Odpowiedzialny: Polina |
+| :--- | :--- | :--- |
+| Priorytet i trudność: Przydatne || Wydanie: 1.0 |
+| Zaimplementowanie sekcji konfiguracji preferencji systemowych użytkownika. Użytkownik powinien móc skonfigurować ustawienia powiadomień (email, SMS, powiadomienia push dla aplikacji mobilnej), określić preferencje dotyczące typów wydarzeń LARP (fantasy, sci-fi, horror, historyczne), wskazać preferowane dni tygodnia i przedziały czasowe uczestnictwa, oraz ustawić poziom prywatności profilu określający widoczność swoich danych i statystyk dla innych użytkowników systemu. |
+
+F08: System powinien umożliwiać rejestrację nowego konta.
+| Typ: _funkcjonalne_ | Wersja: 1.0 (02.03.2026) | Odpowiedzialny: cojarobietu9 |
+| :--- | :--- | :--- |
+| Priorytet i trudność: Kluczowe || Wydanie: 1.0 |
+| Zaimplementowanie funkcjonalności umożliwiającej użytkownikowi rejestrację konta na platformie. Tworzone konto wymaga od użytkownika podania swojego adresu e-mail, dostępnej i unikatowej nazwy konta, oraz dwukrotnego podania hasła. System powinien posiadać odpowiednie wymagania dotyczące hasła (np. długość, rodzaj znaków) i informować, kiedy użytkownik podał odpowiedni przykład. Rejestracja konta możliwa jest po potwierdzeniu tożsamości za pomocą podanego adresu e-mail.|
+
+F09: System powinien umożliwiać logowanie metodą dwuetapową.
+| Typ: _funkcjonalne_ | Wersja: 1.0 (02.03.2026) | Odpowiedzialny: cojarobietu9 |
+| :--- | :--- | :--- |
+| Priorytet i trudność: Użyteczne || Wydanie: 1.0 |
+| Zaimplementowanie funkcjonalności umożliwiającej użytkownikowi dwuetapowe potwierdzenie tożsamości, pierwszy raz za pomocą hasła i drugi raz np. za pomocą kodu QR pochodzącego od dezygnowanej aaplikacji. Użytkownik powinien mieć możliwość włączenia tej opcji wedle życzenia, oraz wyłączenia jej przy pomocy np. adresu mailowego.|
+
+F10: System powinien umożliwiać interakcję z otoczeniem poprzez kody QR.
 | Typ: _funkcjonalne_ | Wersja: 1.0 (02.03.2026) | Odpowiedzialny: Tomasz2004 |
 | :--- | :--- | :--- |
 | Priorytet i trudność: Istotne || Wydanie: 1.0 |
@@ -89,13 +124,18 @@ F09: System powinien umożliwiać interakcję z otoczeniem poprzez kody QR.
 
 ## 3.4 Cechy jakościowe
 
+J02: System powinien wyświetlać dezygnowane ekrany oczekiwania w momentach ładowania się strony.
+| Typ: _jakościowe_ | Wersja: 1.0 (02.03.2026) | Odpowiedzialny: cojarobietu9 |
+| :--- | :--- | :--- |
+| Priorytet i trudność: Istotne || Wydanie: 1.0 |
+| Strona i aplikacja powinny posiadać ekrany oczekiwania w sytuacjach ładowania i przesyłania zasob
+
 J03: System powinien zapewniać dostępność interfejsu mobilnego w trybie offline.
 | Typ: _jakościowe_ | Wersja: 1.0 (02.03.2026) | Odpowiedzialny: Tomasz2004 |
 | :--- | :--- | :--- |
 | Priorytet i trudność: Istotne || Wydanie: 1.0 |
 | Zapewnienie ciągłości działania kluczowych funkcji aplikacji (podgląd karty postaci, historia akcji) w warunkach braku połączenia z siecią. System musi lokalnie przechowywać najważniejsze dane i przeprowadzać synchronizację z serwerem natychmiast po odzyskaniu dostępu do Internetu. |
 
----
 
 ## 3.5 Słownik
 
